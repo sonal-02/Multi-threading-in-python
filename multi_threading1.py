@@ -1,10 +1,11 @@
 # find the addition of square and cude of a number using multithreading.
 
-
+# find square of number
 def square(n):
     
     return n ** 2
 
+# find cube of number
 def cube(n):
 
     return n ** 3
@@ -14,8 +15,8 @@ def cube(n):
 import threading
 from queue import Queue
 
-
-def addition_of_sq_cube(n):
+# create thread here & get result
+def addition_of_sq_and_cube(n):
   
     threads_list = []
     result_list = []
@@ -39,3 +40,6 @@ def addition_of_sq_cube(n):
 
     result = sum(result_list)
     return result
+
+result = addition_of_sq_and_cube(10)
+print(result)
