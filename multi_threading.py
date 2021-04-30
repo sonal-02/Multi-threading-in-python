@@ -82,5 +82,4 @@ def create_dashboard_data_request(request):
     print(new_dict)
 
    
-
     return HttpResponse("ok")
